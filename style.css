@@ -1,0 +1,194 @@
+/* ===== ESTILO GENERAL ===== */
+html, body, [class*="css"] {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f5fb;
+    color: #2c243b;
+}
+
+/* ===== LOGO Y TÍTULO ===== */
+.titulo-app {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #6b4fb3;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ===== TABS ===== */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: #e8def8;
+    color: #5b4b7a;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 18px;
+    font-weight: 600;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #7b61c9 !important;
+    color: white !important;
+}
+
+/* ===== SUBTÍTULOS ===== */
+h2, h3 {
+    color: #4a3a6a;
+    font-weight: 700;
+}
+
+/* ===== FORMULARIOS ===== */
+div[data-baseweb="input"] > div,
+div[data-baseweb="textarea"] > div,
+div[data-baseweb="select"] > div {
+    background-color: white;
+    border: 1px solid #cdbfe9;
+    border-radius: 10px;
+}
+
+/* Cursor de texto más visible */
+input,
+textarea,
+[contenteditable="true"] {
+    caret-color: #7b2cbf !important;
+    color: #2c243b !important;
+}
+
+/* Texto seleccionado más visible */
+::selection {
+    background: #d7c2ff !important;
+    color: #1f1430 !important;
+}
+
+input::selection,
+textarea::selection,
+div[data-baseweb="select"] *::selection {
+    background: #d7c2ff !important;
+    color: #1f1430 !important;
+}
+
+/* Foco visible en inputs */
+div[data-baseweb="input"] > div:focus-within,
+div[data-baseweb="textarea"] > div:focus-within,
+div[data-baseweb="select"] > div:focus-within {
+    border-color: #7b2cbf !important;
+    box-shadow: 0 0 0 3px rgba(123, 44, 191, 0.22) !important;
+}
+
+/* Color del texto dentro de inputs */
+div[data-baseweb="input"] input,
+div[data-baseweb="textarea"] textarea,
+div[data-baseweb="select"] input {
+    color: #2c243b !important;
+}
+
+/* Placeholder más visible */
+input::placeholder,
+textarea::placeholder {
+    color: #8a7aa8 !important;
+    opacity: 1 !important;
+}
+
+/* ===== LABELS ===== */
+label, .stSelectbox label, .stTextInput label, .stTextArea label {
+    color: #4a3a6a !important;
+    font-weight: 600;
+}
+
+/* ===== BOTONES ===== */
+.stButton > button,
+.stFormSubmitButton > button {
+    background-color: #7b61c9;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+}
+
+.stButton > button:hover,
+.stFormSubmitButton > button:hover {
+    background-color: #694fb3;
+    color: white;
+}
+
+/* ===== ALERTAS ===== */
+.stSuccess {
+    background-color: #e6f7ec;
+    border-left: 5px solid #31a354;
+    border-radius: 8px;
+}
+
+.stError {
+    background-color: #fdeaea;
+    border-left: 5px solid #de425b;
+    border-radius: 8px;
+}
+
+.stWarning {
+    background-color: #fff6e5;
+    border-left: 5px solid #e6a700;
+    border-radius: 8px;
+}
+
+.stInfo {
+    background-color: #eaf3fd;
+    border-left: 5px solid #4a90e2;
+    border-radius: 8px;
+}
+
+/* ===== DATAFRAME / TABLAS ===== */
+[data-testid="stDataFrame"] {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #d7cdea;
+}
+
+/* Encabezados de tabla */
+[data-testid="stDataFrame"] thead tr th {
+    background-color: #efe7fb !important;
+    color: #4a3a6a !important;
+    font-weight: 700 !important;
+}
+
+/* Celdas */
+[data-testid="stDataFrame"] tbody tr td {
+    color: #2c243b !important;
+    background-color: #ffffff !important;
+}
+
+/* Fila al pasar mouse */
+[data-testid="stDataFrame"] tbody tr:hover td {
+    background-color: #f5efff !important;
+}
+
+/* Celda seleccionada o activa */
+[data-testid="stDataFrame"] [role="gridcell"]:focus,
+[data-testid="stDataFrame"] [role="columnheader"]:focus,
+[data-testid="stDataFrame"] [tabindex="0"]:focus {
+    outline: 2px solid #7b2cbf !important;
+    outline-offset: -2px !important;
+    background-color: #efe4ff !important;
+}
+
+/* Texto seleccionado dentro de tablas */
+[data-testid="stDataFrame"] *::selection {
+    background: #d7c2ff !important;
+    color: #1f1430 !important;
+}
+
+/* ===== CHECKBOX ===== */
+.stCheckbox label {
+    color: #4a3a6a !important;
+    font-weight: 500;
+}
+
+/* ===== DIVISORES ===== */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 1.2rem 0;
+}
