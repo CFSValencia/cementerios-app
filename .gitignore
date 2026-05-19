@@ -1,3 +1,2 @@
-.streamlit/secrets.toml
-.streamlit/correo *
+.streamlit/
 __pycache__/
