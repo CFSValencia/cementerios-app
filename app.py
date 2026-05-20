@@ -1134,3 +1134,11 @@ if st.session_state.user is None:
     st.stop()
 else:
     mostrar_app()
+# Copyright footer
+st.markdown("---")
+st.markdown(
+    "<div style='text-align: center; color: #666; font-size: 0.85em; padding: 20px 0;'>"
+    "© 2026 Claudia Hernández de Barahona. Todos los derechos reservados."
+    "</div>",
+    unsafe_allow_html=True
+)
